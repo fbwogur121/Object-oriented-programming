@@ -1,4 +1,4 @@
-package main.kotlin_3
+package main.kotlin_3.`kotlin_3-5`
 
 //throw문
 //fun parseIntNumberInBinary(s: String): Int{
