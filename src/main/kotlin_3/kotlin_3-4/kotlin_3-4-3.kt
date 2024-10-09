@@ -17,23 +17,47 @@ import kotlin.random.Random
 
 
 
-//continue문
-fun countLetters(text: String): IntArray {
-    val counts = IntArray('z'-'a'+1)
+////continue문
+//fun countLetters(text: String): IntArray {
+//    val counts = IntArray('z'-'a'+1)
+//
+//    for(char in text){
+//        val charLower = char.toLowerCase()
+//        if(charLower !in 'a'..'z') continue
+//        counts[charLower - 'a'] ++
+//    }
+//    return counts
+//}
+//
+//fun main(){
+//    val text = readLine()!!
+//    val counts = countLetters(text)
+//
+//    for(i in counts.indices){
+//        println("${'a' + i} : ${counts[i]}")
+//    }
+//}
 
-    for(char in text){
-        val charLower = char.toLowerCase()
-        if(charLower !in 'a'..'z') continue
-        counts[charLower - 'a'] ++
+fun indexOf(subArray:IntArray, array: IntArray): Int{
+    outerLoop@ for (i in array.indices) {
+        for (j in subArray.indices){
+            if( array[i+j] != subArray[j] ) continue@outerLoop
+        }
+        return i
     }
-    return counts
+    return -1
 }
 
 fun main(){
-    val text = readLine()!!
-    val counts = countLetters(text)
+    print("Enter the elements of the main array separated by spaces: ")
+    val arryay = readLine()?.split(" ")?.map {it.toInt()}?.toIntArray() ?: intArrayOf()
+    print("Enter the elements of the subArray separated by spaces: ")
+    val subArryay = readLine()?.split(" ")?.map {it.toInt()}?.toIntArray() ?: intArrayOf()
 
-    for(i in counts.indices){
-        println("${'a' + i} : ${counts[i]}")
+    val index = indexOf(subArryay,arryay)
+    if(index != -1){
+        println("subArray starts at index $index in the main array.")
+    }else {
+        println("subArray is not found in the main array.")
     }
 }
