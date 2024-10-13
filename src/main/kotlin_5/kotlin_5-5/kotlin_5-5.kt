@@ -64,7 +64,7 @@ class Address {
     fun post(message: String): String =
         "Message for ($city, $street, $house): $message"
 }
-
+//
 fun main(){
     val msg = Address().let {addr ->
         addr.city = "London"
