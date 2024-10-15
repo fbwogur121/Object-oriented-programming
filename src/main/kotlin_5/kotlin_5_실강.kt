@@ -37,29 +37,29 @@ package main.kotlin_5
 //    println("The number of circles is ${Circle.numCircles}")
 //}
 
-class Circle(var radius: Double){
-    var x = 0.0
-    var y = 0.0
-    val area: Double
-        get() = radius*radius*Math.PI
-}
-
-fun init_c(c: Circle){
-    c.radius = 2.0
-    c.x=7.0
-    c.y= -3.1
-}
-
-fun main(){
-    val c : Circle? = null
-
-    c = Circle()
-
-    c?.let {
-        it.radius = 2.0
-        it.x=7.0
-        it.y= -3.1
-    }
-
-    println("The number of circles is ${c}")
-}
+//class Circle(var radius: Double){
+//    var x = 0.0
+//    var y = 0.0
+//    val area: Double
+//        get() = radius*radius*Math.PI
+//}
+//
+//fun init_c(c: Circle){
+//    c.radius = 2.0
+//    c.x=7.0
+//    c.y= -3.1
+//}
+//
+//fun main(){
+//    val c : Circle? = null
+//
+//    c = Circle()
+//
+//    c?.let {
+//        it.radius = 2.0
+//        it.x=7.0
+//        it.y= -3.1
+//    }
+//
+//    println("The number of circles is ${c}")
+//}
