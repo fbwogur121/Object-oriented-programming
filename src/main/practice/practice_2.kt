@@ -7,11 +7,11 @@ import java.io.IOException
 
 
 fun printGrade(name: String, point: Int) {
-    val grade = when() {
-        point >= 90 -> "A"
-        point >= 80 -> "B"
-        point >= 70 -> "C"
-        point >= 60 -> "D"
+    val grade = when(point) {
+        in 90..100 -> "A"
+        in 80..90 -> "B"
+        in 70..80 -> "C"
+        in 60..70 -> "D"
         else -> "F"
     }
     println("$name has grade $grade")
