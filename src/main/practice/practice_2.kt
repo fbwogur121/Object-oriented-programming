@@ -7,7 +7,7 @@ import java.io.IOException
 
 
 fun printGrade(name: String, point: Int) {
-    val grade = when {
+    val grade = when() {
         point >= 90 -> "A"
         point >= 80 -> "B"
         point >= 70 -> "C"
@@ -18,7 +18,7 @@ fun printGrade(name: String, point: Int) {
 }
 
 fun main() {
-    val fileName = "/Users/fbwogur121/Desktop/4학년 1학기/객체지향 프로그래밍/study/Kotlin_Hello/src/main/kotlin/실습_2주차/students.txt"
+    val fileName = "/Users/fbwogur121/Object-oriented-programming/src/main/practice/students.txt"
 
     try {
         val reader = BufferedReader(FileReader(fileName))
