@@ -1,3 +1,5 @@
+
+
 fun main(){
     val size = readLine()!!.toInt()
     val squares = Array(size){(it+1)*(it+1)}
