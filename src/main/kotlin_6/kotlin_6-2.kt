@@ -20,4 +20,20 @@ fun main() {
     person1.copy(age = 30, firstName = "Jane").show() // Jane Doe: 30
     person1.show() // John Doe: 25
     person1.copy().show() // John Doe: 25
+
+
+    val person4 = Person("abc", "df", 23)
+    val (firstName, familyName, _) = person4
+
+    println("$firstName $familyName is person4")
+
+    val array = arrayOf(1 to "one", 2 to "two", 3 to "three")
+
+    for( elem in array){
+        println("${elem.first} -> ${elem.second}")
+    }
+
+    for((number, name) in array){
+        println("$number -> $name")
+    }
 }
