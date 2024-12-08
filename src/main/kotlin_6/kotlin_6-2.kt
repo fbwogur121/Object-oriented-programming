@@ -20,4 +20,12 @@ fun main() {
     person1.copy(age = 30, firstName = "Jane").show() // Jane Doe: 30
     person1.show() // John Doe: 25
     person1.copy().show() // John Doe: 25
+
+    val pair = Pair(1, "two")
+    val triple = Triple(1, "two", false)
+    println(pair.first+1)
+    println("${pair.second} !!")
+    println(triple.first + 1)
+    println(triple.second)
+    println(!triple.third)
 }
