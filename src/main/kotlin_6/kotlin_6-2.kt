@@ -1,8 +1,8 @@
 package main.kotlin_6
 
 data class Person(val firstName: String,
-            val familyName: String,
-            val age: Int)
+                  val familyName: String,
+                  val age: Int)
 
 fun Person.show() = println("$firstName $familyName: $age")
 
@@ -21,11 +21,6 @@ fun main() {
     person1.show() // John Doe: 25
     person1.copy().show() // John Doe: 25
 
+    // 로컬 변경 사항
     val pair = Pair(1, "two")
-    val triple = Triple(1, "two", false)
-    println(pair.first+1)
-    println("${pair.second} !!")
-    println(triple.first + 1)
-    println(triple.second)
-    println(!triple.third)
-}
+    val triple = Triple(1, "two", false
