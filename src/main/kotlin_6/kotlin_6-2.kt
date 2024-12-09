@@ -23,4 +23,26 @@ fun main() {
 
     // 로컬 변경 사항
     val pair = Pair(1, "two")
-    val triple = Triple(1, "two", false
+    val triple = Triple(1, "two", false)
+    println(pair.first + 1)
+    println("${pair.second} !!")
+    println(triple.first + 1)
+    println(triple.second)
+    println(!triple.third)
+
+    // 원격 변경 사항
+    val person4 = Person("abc", "df", 23)
+    val (firstName, familyName, _) = person4
+
+    println("$firstName $familyName is person4")
+
+    val array = arrayOf(1 to "one", 2 to "two", 3 to "three")
+
+    for (elem in array) {
+        println("${elem.first} -> ${elem.second}")
+    }
+
+    for ((number, name) in array) {
+        println("$number -> $name")
+    }
+}
