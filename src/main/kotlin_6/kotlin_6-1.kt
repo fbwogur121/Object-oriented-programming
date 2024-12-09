@@ -32,5 +32,8 @@ fun main(){
     println(rotateClockwise(dir))
     val dir2 = rotateClockwise(dir)
     println(rotateClockwise(dir2))
+
+    println(Direction.valueOf("NORTH")) // NORTH
+    //println(Direction.valueOf("NORTH_EAST"))
 }
 
