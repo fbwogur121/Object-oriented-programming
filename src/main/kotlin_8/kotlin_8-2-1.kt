@@ -18,12 +18,12 @@ abstract class Shape{
 
 class Circle(val radius: Double): Shape(){
     override val width: Double
-        get() = radius*2
+        get() = radius * 2
     override val height: Double
         get() = radius * 2
 
     override fun area(): Double =
-        PI*radius*radius
+        PI * radius * radius
 }
 
 class Rectangle(override val width: Double, override val height: Double): Shape(){
