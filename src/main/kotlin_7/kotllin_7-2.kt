@@ -8,7 +8,7 @@ fun main(){
     try {
         writer.write("a")
         writer.write("가")
-        //writer.write("나")
+        writer.write("나")
     } finally {
         writer.close()
     }
@@ -19,7 +19,7 @@ fun main(){
         val second = reader.read().toChar()
         println("$first $second")
 
-        val third = reader.read()
+        val third = reader.read().toChar()
         println("$third")
     } finally {
         reader.close()

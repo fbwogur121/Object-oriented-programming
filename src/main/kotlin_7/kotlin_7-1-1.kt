@@ -80,4 +80,7 @@ fun main(){
     println(m2)
     println(m2[5])
     println(m2[100])
+
+    val list5 = mutableListOf(1, 2, 3, 4)
+    println(list5)
 }

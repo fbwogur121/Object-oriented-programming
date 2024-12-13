@@ -35,5 +35,6 @@ fun main(){
 
     println(Direction.valueOf("NORTH")) // NORTH
     //println(Direction.valueOf("NORTH_EAST"))
+    println(Direction.values().joinToString())
 }
 
