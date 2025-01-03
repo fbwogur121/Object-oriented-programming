@@ -25,4 +25,5 @@ fun main(){
         is Result.Success -> "Completed Successfully: ${result.value}"
         is Result.Error -> "Error!: ${result.message}"
     })
+
 }
