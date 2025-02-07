@@ -9,5 +9,4 @@ fun main(){
     val arr = arrayOf(0, 1, 4, 9, 16, 25)
     println(arr.slice(2..4))
     val slice = arr.sliceArray(2..4)
-
 }
