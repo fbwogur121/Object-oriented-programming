@@ -26,3 +26,4 @@ fun main(){
         is Result.Error -> "Error!: ${result.message}"
     })
 }
+
